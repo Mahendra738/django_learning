@@ -1,11 +1,22 @@
-{% extends "website/base.html" %}
 
-{% block title %}Home - Our Website{% endblock %}
+{% extends "layout.html" %}
+{% comment %} {% extends "website/base.html" %} {% endcomment %}
 
-{% block content %}
+{% comment %} {% block title %}Home - Our Website{% endblock %} {% endcomment %}
+
+{% comment %} {% block content %}
 <section class="hero">
-    <h1>Welcome to Our Website</h1>
+    <h1 class="bg-orange-500 text-3xl">Welcome to Our Website</h1>
     <p>Your journey to something amazing starts here.</p>
     <a href="/services/" class="btn">Explore Services</a>
 </section>
-{% endblock %}
+{% endblock %}  {% endcomment %}
+
+{% block title %}
+Home Page
+{% endblock  %}
+
+{% block content %}
+<h1 class="bg-orange-500 text-3xl">Welcome to Our Website</h1>
+
+{% endblock  %} 
